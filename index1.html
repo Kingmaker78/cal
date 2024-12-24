@@ -1,0 +1,909 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+
+
+.form-container {
+ background-color: white;
+  
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem 30px;
+  text-align: center;
+  width: 90%;
+  height: 35rem;
+}
+
+#hd1 {
+  margin-top: 6vh;
+  font-size: 34px;
+  color: #333;
+  
+}
+
+#pd1 {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+
+
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  height: 3rem;
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  /* border-radius: 4px; */
+  appearance: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.payment-info {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #333;
+}
+
+.apply-btn {
+  background-color: #00c853;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.apply-btn:hover {
+  background-color: #00b342;
+}
+
+span {
+  color: #00c853;
+}
+
+    :root{
+        --header:rgb(79, 190, 181);
+        --color: #10C98F;
+        --bgcolor:#26be9f;
+        --text:#0f4332;
+    }
+    .nav-link{
+        margin-right: 2rem;
+        color: white;
+        font-weight: 600;
+    }
+    nav{
+        background-color:var(--header) ;
+        width: 100%;
+        z-index: 10;
+    }
+    .container  button {
+        color: white;
+        background-color: var(--color);
+        padding: 2vh 3vw;
+        border: none;
+    }
+    #p1{
+        overflow: hidden;
+        width: 100%;
+        height: 50rem;
+    }
+  
+    #p1top{
+        border: 1px solid black;
+        width: 100%;
+        height: 50rem;
+        background-color:rgba(79, 190, 181, 0.719);
+        top: 0;
+        padding-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #part2{
+      width: 40%;
+    }
+    #part1{
+      width: 50%;
+     
+    }
+    .card{
+      border:none;
+    }
+    .card img{
+      width: 15%;
+      margin-left: 1vw;
+    }
+    #part1 h1 {
+      color: white;
+      font-size: 60px; }
+
+      #part1 button{
+        color: white;
+        border: 2px solid white;
+        padding: 3vh 4vw;
+        background-color:rgb(79, 190, 181, 0.719);
+        font-size: 20px;
+        height: 5rem;
+        
+      }
+      #img{
+        text-align: center;
+        width: 50%;
+        justify-content: center;
+        align-content: center;
+        /* border: 1px solid black; */
+      }
+      #abs{
+        background-color:var(--color);
+        width: 20%;
+        top: 114rem;
+        left: 30%;
+        height: 15rem;
+        align-content: center;
+        position: absolute;
+      }
+      #abs h1{
+        color: white;
+        font-size: 70px;
+        font-weight: 1000;
+       
+      }
+      #abs p{
+        color: white;
+        font-weight: 600;
+        margin-top: 1rem;
+        
+      }
+      #text h1{
+        color: var(--text);
+        font-weight: 1000;
+        
+      }
+      #text p{
+        color: #666;
+      }
+      #text li{
+        color: var(--text);
+        list-style-type: none;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      #text button{
+        border: 2px solid var(--color);
+        color: var(--color);
+        background-color: transparent;
+        padding: 1rem 3vw;
+        font-weight: 600;
+        font-size: 23px;
+      }
+      #text{
+        padding-left: 5rem;
+        /* padding-right: 0; */
+        /* border: 1px solid black; */
+        padding-right: 5rem;
+        width: 50%;
+      }
+      #img img{
+        width: 65%;
+        position: relative;
+      }
+      #task2 {
+        text-align: center;
+        margin-top: 10rem;
+
+      }
+    #task2 h1{
+      font-weight: 1000;
+      color: var(--text);
+
+    }  
+      hr.new5{
+        border: 2px solid var(--color);
+        opacity: 100;
+        width: 10rem;
+        margin-left: 43%;
+      }
+      
+    
+  footer {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9fdf9;
+}
+
+.footer {
+    background-color: #f4fefa;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-logo {
+    font-size: 24px;
+    color: #00d084;
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #00d084;
+}
+
+.footer-section form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.footer-section button {
+    padding: 10px;
+    border: none;
+    background-color: #00d084;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-section button:hover {
+    background-color: #00a96b;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #00d084;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+.social-icons i{
+  color: gray;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+    
+
+  #t2{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    padding-left: 5vw;
+    padding-top: 5rem;
+    text-align: start; 
+    /* border: 1px solid black; */
+  }
+  #task3{
+    background-color: #e4f1ed;
+     padding: 5rem 0rem;
+     display: flex;
+  }
+
+    #part1 p{
+      color: white;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    @media(max-width:1024px){
+      #t2{
+        display: block;
+        text-align: center;
+        padding-right: 40%;
+        justify-content: center;
+        padding-left: 30%;
+      }
+    #text h1{
+      font-size: 24px;
+    }   
+    #text p{
+      font-size: 13px;
+    }
+ #abs{
+  display: none;
+ }
+     .king img{
+      margin-left: 40%;
+      margin-bottom: 5vh;
+     }
+    }
+    @media (max-width:768px) {
+     #t2 {
+        padding-left: 25%;
+    }
+    hr.new5{
+        margin-left: 38%;
+      }
+      #text h1{
+        font-size: 18px;
+      }
+      #text p{
+        font-size: 12px;
+      }
+      #text li{
+        font-size: 10px;
+      }
+      #text button{
+        padding: 0.5rem 1rem;
+        font-size: 10px;
+      }
+  }
+    @media (max-width:425px) {
+      #p1top{
+        display: block;
+        padding-top: 5rem;
+        text-align: center;
+        height: 80rem;
+      }
+      #task3{
+        display: block; 
+        padding: 0rem;
+      }
+      #img{
+        padding: 0;
+        width:100%;
+        /* border: 1px solid black; */
+      }
+      #img img{
+        width: 90%;
+      }
+      #text{
+        width: 100%;
+        margin-top: 5rem;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+      }
+      #t2{
+        padding-left: 5%;
+      }
+      #p1{
+        height: 80rem;
+      }
+
+      #part1{
+      margin-left: -5vw;
+        width: 100%;
+      }
+      .form-container {
+        width: 230%;
+        margin: 4rem 1rem;
+
+
+      }
+      hr.new5{
+        margin-left: 29%;
+      }
+    }
+    @media (max-width:375px) {
+      #part1 h1{
+        font-size: 45px;
+      }
+      hr.new5{
+        margin-left: 30%;
+      }
+      #part1 p{
+        font-size: 20px;
+      }
+      #t2{
+        padding-left:0 ;
+      }
+    }
+    @media (max-width:320px) {
+      #part1 p{
+        font-size: 19px;
+        
+      }
+      hr.new5{
+        margin-left: 25%;
+      }
+     .king{
+      margin-left: -13vw;
+     }
+      #p1top{
+        padding-top: 0rem;
+      }
+      }
+  </style>
+
+</head>
+  <body>
+    
+    <nav class="header navbar navbar-expand-lg position-fixed" >
+        <div class="container ">
+          <a class="navbar-brand" href="#"><img src="pics/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav ms-auto my-2 my-lg-0 " >
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="#">Contact</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex" role="search">
+              
+              <button class="btn btn-outline-success" type="submit">Apply For Loan</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <div id="p1">
+            <img src="pics/h1_hero1.jpg" alt="">
+        </div>
+        <div id="p1top" class="position-absolute">
+         
+            <div id="part1" class="ps-5">
+                <h1 class="mt-5 ">The Simple <br>
+                    online home <br>
+                     loan.</h1>
+                     <p class="my-4">Financial uncertainty is hard  on <br>
+                    employees, and causes even.</p>
+                    <button >Our Services</button>
+            </div>
+            <div id="part2">
+                <form action="">
+                  <div class="form-container" >
+                    <h1 id="hd1">How much you want?</h1>
+                    <p id="pd1">We provide online instant cash loans.</p>
+                    <hr>
+                    <form>
+                      <div class="form-group">
+                        <label for="amount">Amount You Want</label>
+                        <select id="amount" name="amount">
+                          <option value="" disabled selected>Select Amount</option>
+                          <option value="1000">$1000</option>
+                          <option value="2000">$2000</option>
+                          <option value="3000">$3000</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="month">Month</label>
+                        <select id="month" name="month">
+                          <option value="" disabled selected>Select Month</option>
+                          <option value="1">1 Month</option>
+                          <option value="3">3 Months</option>
+                          <option value="6">6 Months</option>
+                        </select>
+                      </div>
+                      <p class="payment-info">You have to pay: <span>$0</span></p>
+                      <button type="submit" class="apply-btn">Apply Now</button>
+                    </form>
+                    <p>We provide online instant cash loans.</p>
+                  </div>
+                </form>
+                
+            </div>
+        
+      </div>
+
+
+      <div id="task2">
+        <h1>Solutions for every business need.</h1>
+        <hr class="new5">
+        <p>The brochure must grab a viewer’s attention and hold it long <br>
+          enough to deliver the pertinent information.</p>
+          <div id="t2" class="container-fluid ">
+          <div class="king  container mt-3 px-0"  >
+ 
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="pics/services1.svg" alt="Card image" >
+              <div class="card-body">
+                <h4 class="card-title">What are my options and the <br> 
+                  cost to exercise?</h4>
+                <p class="card-text">
+                  Tools such as a profit and tax calculator <br>
+                   show the value of your stock options and <br>
+                    exercise cost.
+                </p>
+               
+              </div>
+            </div>
+      </div>
+      <div class="king  container mt-3  px-0" >
+ 
+        <div class="card" style="width:400px">
+          <img class="card-img-top" src="pics/services2.svg" alt="Card image" >
+          <div class="card-body">
+            <h4 class="card-title">What are my options and the <br>
+              cost to exercise?</h4>
+            <p class="card-text">
+              Tools such as a profit and tax calculator <br>
+               show the value of your stock options and <br>
+                exercise cost.
+            </p>
+           
+          </div>
+        </div>
+  </div>
+  <div class="king  container mt-0 px-0" >
+ 
+    <div class="card" style="width:400px">
+      <img class="card-img-top" src="pics/services3.svg "alt="Card image" >
+      
+      <div class="card-body">
+        <h4 class="card-title">What are my options and the <br>
+          cost to exercise?</h4>
+        <p class="card-text">
+          Tools such as a profit and tax calculator <br>
+           show the value of your stock options and <br>
+            exercise cost.
+        </p>
+       
+      </div>
+    </div>
+</div>
+</div>
+      </div>
+
+      <div id="task3"  >
+        <div id="img" >
+          <img src="pics/about1.jpg" alt="">
+          <div id="abs">
+            <h1>99%</h1>
+            <p>Customer Satisfaction</p>
+          </div>
+        </div>
+        <div id="text"  >
+          <h1>
+            We guide projects and <br>
+             organizations in making <br>
+             the right decisions.
+          </h1>
+          <p class="py-3">
+            Tools such as a profit simulator and tax calculator show <br>
+            the value of your stock options and exercise cost. The <br>
+             brochure must grab a viewer’s attention and hold it long <br>
+              enough to deliver the pertinent information.
+          </p>
+          <hr>
+          <li>Monthly recurring revenue</li>
+          <li>Customer acquisition cost</li>
+          <li class="mb-3 pb-3"> Number of customers</li>
+          <button>Learn More  </button>
+        </div>
+      </div>
+
+      <div id="task4">
+        <div id="task2">
+          <h1>Why choose us?</h1>
+          <hr class="new5">
+          <p>The brochure must grab a viewer’s attention and hold it long <br>
+            enough to deliver the pertinent information.</p>
+        </div>
+        <div id="t2 " class="container-fluid  d-flex" style="margin-top: 5rem;  display: flex; padding-left: 0; width: 100%;" >
+          <div class="king  container mt-0 px-0" >
+ 
+            <div class="card text-center">
+              <img class="card-img-top" src="pics/services3.svg "alt="Card image" style="margin-left: 43%;" >
+              
+              <div class="card-body">
+                <h4 class="card-title">
+                  Quick Apply</h4>
+                <p class="card-text fs-5">
+                  Tools such as a profit <br>
+                  simulator and tax simulator  <br>
+                  calculator
+                   show the <br>
+                   showvalue of your stock <br>
+                    options and exercise cost.
+                </p>
+               
+              </div>
+            </div>
+          </div>
+            <div class="king  container mt-0 px-0" >
+ 
+              <div class="card text-center">
+                <img class="card-img-top" src="pics/services3.svg "alt="Card image" style="margin-left: 43%;" >
+                
+                <div class="card-body">
+                  <h4 class="card-title">
+                    Quick Apply</h4>
+                  <p class="card-text fs-5">
+                    Tools such as a profit <br>
+                    simulator and tax simulator  <br>
+                    calculator
+                     show the <br>
+                     showvalue of your stock <br>
+                      options and exercise cost.
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+              <div class="king  container mt-0 px-0" >
+ 
+                <div class="card text-center">
+                  <img class="card-img-top" src="pics/services3.svg "alt="Card image" style="margin-left: 43%;" >
+                  
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Quick Apply</h4>
+                    <p class="card-text fs-5">
+                      Tools such as a profit <br>
+                      simulator and tax simulator  <br>
+                      calculator
+                       show the <br>
+                       showvalue of your stock <br>
+                        options and exercise cost.
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+                <div class="king  container mt-0 px-0" >
+ 
+                  <div class="card text-center">
+                    <img class="card-img-top" src="pics/services3.svg "alt="Card image" style="margin-left: 43%;" >
+                    
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Quick Apply</h4>
+                      <p class="card-text fs-5">
+                        Tools such as a profit <br>
+                        simulator and tax simulator  <br>
+                        calculator
+                         show the <br>
+                         showvalue of your stock <br>
+                          options and exercise cost.
+                      </p>
+                     
+                    </div>
+                  </div>
+                        
+        </div>
+
+
+
+
+
+        </div>
+      </div>
+
+      <div id="task3"  >
+        <div id="text"  >
+          <h1>
+            We guide projects and <br>
+             organizations in making <br>
+             the right decisions.
+          </h1>
+          <p class="py-3">
+            Tools such as a profit simulator and tax calculator show <br>
+            the value of your stock options and exercise cost. The <br>
+             brochure must grab a viewer’s attention and hold it long <br>
+              enough to deliver the pertinent information.
+          </p>
+          <hr>
+          <li>Monthly recurring revenue</li>
+          <li>Customer acquisition cost</li>
+          <li class="mb-3 pb-3"> Number of customers</li>
+          <button>Learn More  </button>
+        </div>
+        <div id="img" >
+          <img src="pics/about2.jpg" alt="">
+          <div id="abs">
+            <h1>99%</h1>
+            <p>Customer Satisfaction</p>
+          </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+<div id="lastw" >
+  
+  <div id="task2">
+    <h1>Latest News</h1>
+    <hr class="new5">
+  </div>
+  <div id="lb"class="d-flex ps-5 mb-5">
+    
+    <div class="card" >
+      <img class="card-img-top" src="pics/blog1.jpg" alt="Card image" style="width:80%">
+      <p class="ms-3 mb-0" style="color: grey; font-weight: 400;">20 March 2021</p>
+      <div class="card-body">
+        <h4 class="card-title" style="color: var(--text); font-weight: 500; font-size: 30px;">What are my options worth <br>
+        and the cost to exercise</h4>
+        <p class="card-text" style="color: grey; font-size: 20px;">Tools such as a profit simulator and tax <br>
+          calculator show the value of your stock <br>
+           options and exercise cost.</p>
+     
+      </div>
+    </div>
+    <div class="card" >
+      <img class="card-img-top" src="pics/blog2.jpg" alt="Card image" style="width:80%">
+      <p class="ms-3 mb-0" style="color: grey; font-weight: 400;">20 March 2021</p>
+      <div class="card-body">
+        <h4 class="card-title" style="color: var(--text); font-weight: 500; font-size: 30px;">From start to finish, we were <br>
+        acquired within 30-days</h4>
+        <p class="card-text" style="color: grey; font-size: 20px;">Tools such as a profit simulator and tax <br>
+          calculator show the value of your stock <br>
+           options and exercise cost.</p>
+     
+      </div>
+    </div>
+  
+     
+   
+     
+
+        <div class="card" >
+          <img class="card-img-top" src="pics/blog3.jpg" alt="Card image" style="width:80%">
+          <p class="ms-3 mb-0" style="color: grey; font-weight: 400;">20 March 2021</p>
+          <div class="card-body">
+            <h4 class="card-title" style="color: var(--text); font-weight: 500; font-size: 30px;">We'll connect you with the <br>
+            right people to start</h4>
+            <p class="card-text" style="color: grey; font-size: 20px;">Tools such as a profit simulator and tax <br>
+              calculator show the value of your stock <br>
+               options and exercise cost.</p>
+         
+          </div>
+        </div>
+      
+        
+       
+      </div>
+      
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      </main>
+
+  
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h2 class="footer-logo mb-4"><img src="pics/logo2_footer.png" alt=""></h2>
+                <p  style="color: gray;">
+                    Tools such as a profit simulator and tax calculator show the value
+                    of your stock options and exercise cost.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 style="color: var(--text);margin-bottom: 3rem; font-weight: 600; font-size: 20px;">Quick Links</h3>
+                <ul>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Tips & Tricks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="color: var(--text);margin-bottom: 3rem; font-weight: 600; font-size: 20px;">Solution</h3>
+                <ul>
+                    <li><a href="#">Air freight</a></li>
+                    <li><a href="#">Ocean freight</a></li>
+                    <li><a href="#">Large projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 style="color: var(--text);margin-bottom: 3rem; font-weight: 600; font-size: 20px;">Newsletter</h3>
+                <p>Subscribe newsletter to get updates.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="submit">→</button>
+                </form>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>
+                Copyright ©2024 All rights reserved | This template is made with 💚 by
+                <a href="https://colorlib.com">Colorlib</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
